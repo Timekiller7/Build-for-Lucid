@@ -9,12 +9,11 @@ import {
   MintingPolicy,
 } from "lucid-cardano";
 import scripts from "./scripts.json";
-
-const project_id = "preprodM0gEL7WPaXREI728fDXVAjWs5zavdEms"
+import {BLOCKFROST_API} from "./secret";
 
 
 export const lucid = await Lucid.new(
-  new Blockfrost("https://cardano-preprod.blockfrost.io/api/v0", project_id),
+  new Blockfrost("https://cardano-preprod.blockfrost.io/api/v0", BLOCKFROST_API),
   "Preprod",
 )
 

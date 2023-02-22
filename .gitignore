@@ -2,3 +2,5 @@ node_modules/
 .cache/
 public
 secrets.ts
+my-gatsby-site/
+src/cardano/nft/secret.ts
