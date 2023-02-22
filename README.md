@@ -1,12 +1,19 @@
 How-to launch:
 
-1. Initialize gatsby
+1. Preparing
 
-    ```shell
-    npm init gatsby
-    ```
-    
+    a). 
+      ```shell
+      npm init gatsby
+      ```
         follow "default" scenario
+
+    b). create "secret.ts" file in directory: src/cardano/nft/
+        then declare const "BLOCKFROST_API" and insert your API_KEY from Blockfrost: 
+
+          ```
+          export const BLOCKFROST_API ="API_KEY"
+          ```
 
 2.  Install dependencies
 
